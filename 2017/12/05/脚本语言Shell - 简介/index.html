@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="iOS,设计模式," />
+  <meta name="keywords" content="Shell," />
 
 
 
@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="设计模式之工厂模式一.定义 工厂方法模式：定义一个创建对象的接口，但由子类类决定实例化的类是哪一个。工厂方法让类的实例化推迟到子类。  简单工厂模式：建立一个工厂（一个函数或一个类方法）来制造新的对象。  抽象工厂模式：提供一个接口，用于创建相关或者依赖的对象家族，而不需要明确指定具体类   ####简单工厂模式 ##">
-<meta name="keywords" content="iOS,设计模式">
+<meta name="description" content="####什么是ShellShell 脚本（shell script），是一种为 shell 编写的脚本程序。例如:Android开发：动态库编译（.so文件）,    iOS开发：静态库（.a文件）都可以使用shell来编译 ####Shell环境Mac环境支持Shell开发Shell中类非常多,Bash所有的操作系统">
+<meta name="keywords" content="Shell">
 <meta property="og:type" content="article">
-<meta property="og:title" content="设计模式之工厂模式">
-<meta property="og:url" content="http://yoursite.com/2017/03/29/iOS开发/设计模式之工厂模式/index.html">
+<meta property="og:title" content="脚本语言shell -简介">
+<meta property="og:url" content="http://yoursite.com/2017/12/05/脚本语言Shell - 简介/index.html">
 <meta property="og:site_name" content="Double Mint">
-<meta property="og:description" content="设计模式之工厂模式一.定义 工厂方法模式：定义一个创建对象的接口，但由子类类决定实例化的类是哪一个。工厂方法让类的实例化推迟到子类。  简单工厂模式：建立一个工厂（一个函数或一个类方法）来制造新的对象。  抽象工厂模式：提供一个接口，用于创建相关或者依赖的对象家族，而不需要明确指定具体类   ####简单工厂模式 ####要点 1.所用的工厂都是用来封装对象的创建2.简单工厂，虽然不是真正的设计模">
+<meta property="og:description" content="####什么是ShellShell 脚本（shell script），是一种为 shell 编写的脚本程序。例如:Android开发：动态库编译（.so文件）,    iOS开发：静态库（.a文件）都可以使用shell来编译 ####Shell环境Mac环境支持Shell开发Shell中类非常多,Bash所有的操作系统默认脚本语言（免费、易用）种类：bash、c Shell、K Shell等等…">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-07-06T08:02:55.000Z">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1fm5m9citrij30os0b0myf.jpg">
+<meta property="og:updated_time" content="2017-12-05T01:50:09.651Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="设计模式之工厂模式">
-<meta name="twitter:description" content="设计模式之工厂模式一.定义 工厂方法模式：定义一个创建对象的接口，但由子类类决定实例化的类是哪一个。工厂方法让类的实例化推迟到子类。  简单工厂模式：建立一个工厂（一个函数或一个类方法）来制造新的对象。  抽象工厂模式：提供一个接口，用于创建相关或者依赖的对象家族，而不需要明确指定具体类   ####简单工厂模式 ####要点 1.所用的工厂都是用来封装对象的创建2.简单工厂，虽然不是真正的设计模">
+<meta name="twitter:title" content="脚本语言shell -简介">
+<meta name="twitter:description" content="####什么是ShellShell 脚本（shell script），是一种为 shell 编写的脚本程序。例如:Android开发：动态库编译（.so文件）,    iOS开发：静态库（.a文件）都可以使用shell来编译 ####Shell环境Mac环境支持Shell开发Shell中类非常多,Bash所有的操作系统默认脚本语言（免费、易用）种类：bash、c Shell、K Shell等等…">
+<meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1fm5m9citrij30os0b0myf.jpg">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/29/iOS开发/设计模式之工厂模式/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/05/脚本语言Shell - 简介/"/>
 
 
 
 
 
-  <title>设计模式之工厂模式 | Double Mint</title>
+  <title>脚本语言shell -简介 | Double Mint</title>
   
 
 
@@ -263,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/29/iOS开发/设计模式之工厂模式/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/05/脚本语言Shell - 简介/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ricky">
@@ -280,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">设计模式之工厂模式</h1>
+          <h1 class="post-title" itemprop="name headline">脚本语言shell -简介</h1>
         
 
         <div class="post-meta">
@@ -292,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-29T14:30:01+08:00">
-                2017-03-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-05T08:43:59+08:00">
+                2017-12-05
               </time>
             
 
@@ -315,19 +317,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iOS开发/" itemprop="url" rel="index">
-                    <span itemprop="name">iOS开发</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iOS开发/设计模式/" itemprop="url" rel="index">
-                    <span itemprop="name">设计模式</span>
+                  <a href="/categories/Shell/" itemprop="url" rel="index">
+                    <span itemprop="name">Shell</span>
                   </a>
                 </span>
 
@@ -363,17 +354,40 @@
       
 
       
-        <h2 id="设计模式之工厂模式"><a href="#设计模式之工厂模式" class="headerlink" title="设计模式之工厂模式"></a>设计模式之工厂模式</h2><h4 id="一-定义"><a href="#一-定义" class="headerlink" title="一.定义"></a>一.定义</h4><ul>
-<li><p>工厂方法模式：定义一个创建对象的接口，但由子类类决定实例化的类是哪一个。工厂方法让类的实例化推迟到子类。</p>
+        <p>####什么是Shell<br>Shell 脚本（shell script），是一种为 shell 编写的脚本程序。例如:Android开发：动态库编译（.so文件）,    iOS开发：静态库（.a文件）都可以使用shell来编译</p>
+<p>####Shell环境<br>Mac环境支持Shell开发<br>Shell中类非常多,Bash所有的操作系统默认脚本语言（免费、易用）<br>种类：bash、c Shell、K Shell等等…</p>
+<p>####编译第一个shell脚本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">echo &quot;hello world!&quot;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>#! 是一个约定的标记，它告诉系统这个脚本需要什么解释器来执行，即使用哪一种 Shell。</li>
+</ul>
+<p>####修改文件权限</p>
+<ul>
+<li><p>文件权限分为4个部分 (类比QQ群)<br><img src="https://ws4.sinaimg.cn/large/006tNc79gy1fm5m9citrij30os0b0myf.jpg" alt=""></p>
+<ul>
+<li>文件类型: (d:目录  -:文件)</li>
+<li>属主权限 (群主)</li>
+<li>属组权限 (管理员)</li>
+<li>其他用户权限 (其他成员)</li>
+</ul>
 </li>
-<li><p>简单工厂模式：建立一个工厂（一个函数或一个类方法）来制造新的对象。</p>
-</li>
-<li><p>抽象工厂模式：提供一个接口，用于创建相关或者依赖的对象家族，而不需要明确指定具体类</p>
+<li><p>查看文件的权限</p>
+<ul>
+<li>r: 可读<ul>
+<li>w: 可写</li>
+<li>x: 可执行</li>
+<li>-:没有该权限就用</li>
+</ul>
 </li>
 </ul>
-<p>####简单工厂模式</p>
-<p>####要点</p>
-<p>1.所用的工厂都是用来封装对象的创建<br>2.简单工厂，虽然不是真正的设计模式，但是任为一种简单的方法，可以将客户程序从具体的类中解耦<br>3.工厂方法使用继承：把对象的创建委托给子类，子类实现工厂方法来创建对象<br>4.抽象工厂使用对象组合：对象的创建被实现在工厂的接口所暴露的方法里面<br>5.所有的工厂都是通过减少应用程序和具体类之间的依赖促进解耦和<br>6.工厂方法允许将实例化延迟到子类进行<br>7.抽象工厂创建的相关的对象家族，而不需要依赖他们的具体类<br>8.依赖倒置原则知道我们避免依赖具体类型，而尽量使用依赖的抽象<br>9.工厂是很有威力的技巧，帮助我们队针对抽象编程，而不是针对具体类编程</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ls -l text1.sh</span><br><span class="line"># -rw-r--r--</span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改文件权限</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod +x text1.sh</span><br><span class="line">#-rwxr-xr-x</span><br></pre></td></tr></table></figure>
+<p>####shell脚本语言注释 (#)</p>
+<p>shell脚本中只有单行注释,没有多行注释,单行注释使用 <code>#</code></p>
 
       
     </div>
@@ -391,9 +405,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/iOS/" rel="tag"># iOS</a>
-          
-            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
+            <a href="/tags/Shell/" rel="tag"># Shell</a>
           
         </div>
       
@@ -406,14 +418,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/08/22/JavaWeb之JSP指令标识/" rel="next" title="Doublemint带你解读SDWebImage(一) 之SDWebImageManager">
+                <i class="fa fa-chevron-left"></i> Doublemint带你解读SDWebImage(一) 之SDWebImageManager
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/06/iOS开发/Doublemint带你解读SDWebImage(一) 之SDWebImageManager/" rel="prev" title="Doublemint带你解读SDWebImage(一) 之SDWebImageManager">
-                Doublemint带你解读SDWebImage(一) 之SDWebImageManager <i class="fa fa-chevron-right"></i>
+              <a href="/2017/12/05/iOS开发之快速统一项目风格UIAppearance/" rel="prev" title="iOS开发之快速统一项目风格UIAppearance">
+                iOS开发之快速统一项目风格UIAppearance <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -466,17 +482,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -542,22 +549,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#设计模式之工厂模式"><span class="nav-number">1.</span> <span class="nav-text">设计模式之工厂模式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一-定义"><span class="nav-number">1.0.1.</span> <span class="nav-text">一.定义</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
